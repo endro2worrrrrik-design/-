@@ -5,11 +5,11 @@ from telegram.ext import (
     CommandHandler,
     ContextTypes,
 )
+import os
+TOKEN = os.getenv("TOKEN")
 
-TOKEN = "8340283001:AAE92AOiKWQWGoSSVkZNO6WAbRZFX1K0rm8"
 
-
-# ---------- helpers ----------
+# ---------- helpers --
 
 async def get_coords(city: str):
     url = (
